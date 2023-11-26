@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Resume Relationships</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <style src="network-link-style.css"></style>
+    <script src="network-link-script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<style>
+    .myContainer {
+        margin: auto;
+        width: 1200px;
+    }
+</style>
+
+<body>
+    <div class="myContainer">
+        <br>
+        <h1 class="text-center">Network Link Graph</h1>
+        <br>
+        <hr>
+        <div class="border border-dark rounded p-2 mb-2 bg-light shadow-sm" id="plotDiv">
+            <div>
+                <label>Select Sub-Organization : </label>
+                <select id="plot_graph" onchange="plotGraph(value)">
+                    <option value="board">Board</option>
+                    <option value="technical">Technical</option>
+                    <option value="operations">Operations</option>
+                    <option value="security">Security</option>
+                    <option value="executive">Executive</option>
+                    <option value="logistics">Logistics</option>
+                </select>
+            </div>
+            <br>
+            <svg id="plotSvg"></svg>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

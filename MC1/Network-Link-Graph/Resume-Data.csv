@@ -1,0 +1,36 @@
+name,role,impOfPeople,suborganization,impOfSuborganization,clusterSize
+Ms. Ada Campo-Corrente ,Chief Information Officer for GASTech,10,Board,6,1
+"Mr. Sten Sanjorge, Jr",President & CEO GASTech,10,Board,6,1
+Ms. Ingrid Barranco,Chief Financial Officer of GASTech,9,Board,6,1
+Mr.Orhan Strum,Chief Operating Officer for GASTech,8,Board,6,1
+Linnea Bergen,"Group Manager – Information Technology GASTech – Abila, Kronos",7,Technical,5,4
+Axel Calzas,"Senior Drilling Technician -GASTech - Abila, Kronos",7,Technical,5,4
+Lidelse Dedos,Engineering Group Manager -GASTech - Kronos,7,Technical,5,4
+Felix Balas,"Research Engineer -GASTech-Abila, Kronos",6,Technical,5,4
+Lars Azada,"Research Engineer GASTech – Abila, Kronos",6,Technical,5,4
+Elsa Orilla,"Drilling Technician -GASTech -Abila, Kronos",5,Technical,5,4
+Isak Baza,"Information Technology Technician-GASTech – Abila, Kronos",5,Technical,5,4
+Isande Borrasca,"Senior Drill Technician- GASTech –Abila, Kronos",5,Technical,5,4
+Nils Calixto,"Information Technology Technician-GASTech –Abila, Kronos",5,Technical,5,4
+Sven Flecha,Information Technology Technician-GASTech – Kronos,5,Technical,5,4
+Lucas Alcazar,"Helpdesk Consultant- GASTech – Abila, Kronos",4,Technical,5,4
+Marin Onda,"Site Manager-GASTech –Abila,Kronos",6,Operations,4,2
+Bertrand Ovan,"Facilities Group Manager-Abila, Kronos",6,Operations,4,2
+Stenig Fusil,"Security Team Leader- GASTech -Abila, Kronos",5,Operations,4,2
+Dante Coginian,"Cleaning Team Leader- Abila, Kronos",4,Operations,4,2
+Emile Arpa,Janitor-GASTech - Kronos,1,Operations,4,2
+Willem Vasco-Pais,Environmental Safety Advisor,7,Security,3,3
+Felix Resumir,"Security Group Manager - GASTech – Abila, Kronos",7,Security,3,3
+Hideki Cocinaro,Security Officer-GASTech - Kronos,4,Security,3,3
+Isia Vann,Security Officer-GASTech - Kronos,4,Security,3,3
+Loreto Bodrogi,Security Officer-GASTech - Kronos,4,Security,3,3
+Minke Mies,"Security Officer- GASTech – Abila, Kronos",4,Security,3,3
+Anda Ribera,"Senior Executive Assistant to the CFO -GASTech – Abila, Kronos",4,Executive,2,2
+Carla Forluniau,Administrative Assistant-GASTech – Kronos,3,Executive,2,2
+Cornelia Lais,"Executive Assistant -GASTech – Abila,Kronos",3,Executive,2,2
+Linda Lagos,"Executive Assistant -GASTech – Abila, Kronos",3,Executive,2,2
+Rachel Panatal,"Executive Assistant-GASTech –Abila, Kronos",3,Executive,2,2
+Adan Morlun,Truck Driver GASTech - Kronos,2,Logistics,1,1
+Albina Hafon,"Truck Driver-Abila, Kronos",2,Logistics,1,1
+Claudio Hawelon,"Truck Driver, GASTech Abila, Kronos",2,Logistics,1,1
+Irene Nant,"Truck Driver, GASTech-Abila, Kronos",2,Logistics,1,1

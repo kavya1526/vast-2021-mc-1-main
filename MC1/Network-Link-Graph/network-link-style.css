@@ -1,0 +1,12 @@
+.svg {
+    width: 780p5;
+    height: 400px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.myContainer {
+    margin: auto;
+    width: 1200px;
+}
