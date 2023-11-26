@@ -41,9 +41,11 @@ function plotGraph() {
 
     const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
+    /*
     const strokeScale = d3.scaleLinear()
         .domain([d3.min(resumeData, d => d.impOfSuborganization), d3.max(resumeData, d => d.impOfSuborganization)])
         .range([1, 6]); // Adjust stroke width range based on impOfSuborganization
+    */
 
     const svg = d3.select("#plotSvg")
         .attr("width", width + margin.left + margin.right)
@@ -94,8 +96,8 @@ function plotGraph() {
         .attr("cy", height/2) // Fixed y position at the bottom of the chart
         .attr("r", d => d.impOfPeople * 3) // Adjusted radius based on impOfPeople
         .attr("fill", d => colorScale(d.impOfPeople))
-        .attr("stroke", "black") // Border color based on impOfPeople
-        .attr("stroke-width", d => strokeScale(d.impOfSuborganization)) // Border width based on impOfSuborganization
+        .attr("stroke", "black") // Border color 
+        .attr("stroke-width", "1") // Border width 
         .attr("opacity", 1)
         .classed("box_circles", true)
         .on("mouseover", function (event, d) {
