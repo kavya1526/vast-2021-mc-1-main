@@ -1,70 +1,70 @@
-Full Name,First Name ,Last Name,Email,Gender,role,impOfPeople,organization
-Ada Campo-Corrente,Ada,Campo-Corrente,Ada.Campo-Corrente@gastech.com.kronos,Female,Chief Information Officer for GASTech,10,GASTechBoard
-Sten Sanjorge Jr,Sten,Sanjorge Jr,Sten.Sanjorge Jr@gastech.com.kronos,Male,President & CEO GASTech,10,GASTechBoard
-Ingrid Barranco,Ingrid,Barranco,Ingrid.Barranco@gastech.com.kronos,Female,Chief Financial Officer of GASTech,9,GASTechBoard
-Orhan Strum,Orhan,Strum,Orhan.Strum@gastech.com.kronos,Male,Chief Operating Officer for GASTech,8,GASTechBoard
-Linnea Bergen,Linnea,Bergen,Linnea.Bergen@gastech.com.kronos,Female,"Group Manager – Information Technology GASTech – Abila, Kronos",7,GASTechCommittee
-Lidelse Dedos,Lidelse,Dedos,Lidelse.Dedos@gastech.com.kronos,Female,Engineering Group Manager -GASTech - Kronos,7,GASTechCommittee
-Marin Onda,Marin,Onda,Marin.Onda@gastech.com.kronos,Male,"Site Manager-GASTech –Abila,Kronos",6,GASTechCommittee
-Bertrand Ovan,Bertrand,Ovan,Bertrand.Ovan@gastech.com.kronos,Male,"Facilities Group Manager-Abila, Kronos",6,GASTechCommittee
-Felix Resumir,Felix,Resumir,Felix.Resumir@gastech.com.kronos,Male,"Security Group Manager - GASTech – Abila, Kronos",7,GASTechCommittee
-Axel Calzas,Axel,Calzas,Axel.Calzas@gastech.com.kronos,Male,"Senior Drilling Technician -GASTech - Abila, Kronos",7,GASTechEmployee
-Felix Balas,Felix,Balas,Felix.Balas@gastech.com.kronos,Male,"Research Engineer -GASTech-Abila, Kronos",6,GASTechEmployee
-Lars Azada,Lars,Azada,Lars.Azada@gastech.com.kronos,Male,"Research Engineer GASTech – Abila, Kronos",6,GASTechEmployee
-Elsa Orilla,Elsa,Orilla,Elsa.Orilla@gastech.com.kronos,Female,"Drilling Technician -GASTech -Abila, Kronos",5,GASTechEmployee
-Isak Baza,Isak,Baza,Isak.Baza@gastech.com.kronos,Male,"Information Technology Technician-GASTech – Abila, Kronos",5,GASTechEmployee
-Isande Borrasca,Isande,Borrasca,Isande.Borrasca@gastech.com.kronos,Female,"Senior Drill Technician- GASTech –Abila, Kronos",5,GASTechEmployee
-Nils Calixto,Nils,Calixto,Nils.Calixto@gastech.com.kronos,Male,"Information Technology Technician-GASTech –Abila, Kronos",5,GASTechEmployee
-Sven Flecha,Sven,Flecha,Sven.Flecha@gastech.com.kronos,Male,Information Technology Technician-GASTech – Kronos,5,GASTechEmployee
-Lucas Alcazar,Lucas,Alcazar,Lucas.Alcazar@gastech.com.kronos,Male,"Helpdesk Consultant- GASTech – Abila, Kronos",4,GASTechEmployee
-Stenig Fusil,Stenig,Fusil,Stenig.Fusil@gastech.com.kronos,Male,"Security Team Leader- GASTech -Abila, Kronos",5,GASTechEmployee
-Dante Coginian,Dante,Coginian,Dante.Coginian@gastech.com.kronos,Male,"Cleaning Team Leader- Abila, Kronos",4,GASTechEmployee
-Emile Arpa,Emile,Arpa,Emile.Arpa@gastech.com.kronos,Male,Janitor-GASTech - Kronos,1,GASTechEmployee
-Willem Vasco-Pais,Willem,Vasco-Pais,Willem.Vasco-Pais@gastech.com.kronos,Male,Environmental Safety Advisor,7,GASTechEmployee
-Hideki Cocinaro,Hideki,Cocinaro,Hideki.Cocinaro@gastech.com.kronos,Male,Security Officer-GASTech - Kronos,4,GASTechEmployee
-Isia Vann,Isia,Vann,Isia.Vann@gastech.com.kronos,Male,Security Officer-GASTech - Kronos,4,GASTechEmployee
-Loreto Bodrogi,Loreto,Bodrogi,Loreto.Bodrogi@gastech.com.kronos,Male,Security Officer-GASTech - Kronos,4,GASTechEmployee
-Minke Mies,Minke,Mies,Minke.Mies@gastech.com.kronos,Male,"Security Officer- GASTech – Abila, Kronos",4,GASTechEmployee
-Anda Ribera,Anda,Ribera,Anda.Ribera@gastech.com.kronos,Female,"Senior Executive Assistant to the CFO -GASTech – Abila, Kronos",4,GASTechEmployee
-Carla Forluniau,Carla,Forluniau,Carla.Forluniau@gastech.com.kronos,Female,Administrative Assistant-GASTech – Kronos,3,GASTechEmployee
-Cornelia Lais,Cornelia,Lais,Cornelia.Lais@gastech.com.kronos,Female,"Executive Assistant -GASTech – Abila,Kronos",3,GASTechEmployee
-Linda Lagos,Linda,Lagos,Linda.Lagos@gastech.com.kronos,Female,"Executive Assistant -GASTech – Abila, Kronos",3,GASTechEmployee
-Rachel Pantanal,Rachel,Pantanal,Rachel.Pantanal@gastech.com.kronos,Female,"Executive Assistant-GASTech –Abila, Kronos",3,GASTechEmployee
-Adan Morlun,Adan,Morlun,Adan.Morlun@gastech.com.kronos,Male,Truck Driver GASTech - Kronos,2,GASTechEmployee
-Albina Hafon,Albina,Hafon,Albina.Hafon@gastech.com.kronos,Female,"Truck Driver-Abila, Kronos",2,GASTechEmployee
-Claudio Hawelon,Claudio,Hawelon,Claudio.Hawelon@gastech.com.kronos,Male,"Truck Driver, GASTech Abila, Kronos",2,GASTechEmployee
-Irene Nant,Irene,Nant,Irene.Nant@gastech.com.kronos,Female,"Truck Driver, GASTech-Abila, Kronos",2,GASTechEmployee
-Varja Lagos,Varja,Lagos,Varja.Lagos@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Brand Tempestad,Brand,Tempestad,Brand.Tempestad@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Mat Bramar,Mat,Bramar,Mat.Bramar@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Benito Hawelon,Benito,Hawelon,Benito.Hawelon@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Birgitta Frente,Birgitta,Frente,Birgitta.Frente@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Hennie Osvaldo,Hennie,Osvaldo,Hennie.Osvaldo@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Valeria Morlun,Valeria,Morlun,Valeria.Morlun@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Cecilia Morluniau,Cecilia,Morluniau,Cecilia.Morluniau@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Varro Awelon,Varro,Awelon,Varro.Awelon@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Vira Frente,Vira,Frente,Vira.Frente@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Ruscella Mies Haber,Ruscella,Mies Haber,Ruscella.Mies Haber@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Kanon Herrero,Kanon,Herrero,Kanon.Herrero@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Adra Nubarron,Adra,Nubarron,Adra.Nubarron@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Dylan Scozzese,Dylan,Scozzese,Dylan.Scozzese@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Inga Ferro,Inga,Ferro,Inga.Ferro@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Henk Mies,Henk,Mies,Henk.Mies@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Gustav Cazar,Gustav,Cazar,Gustav.Cazar@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Edvard Vann,Edvard,Vann,Edvard.Vann@gastech.com.kronos,Male,Member - GASTech,1,GASTechEmployee
-Kare Orilla,Kare,Orilla,Kare.Orilla@gastech.com.kronos,Female,Member - GASTech,1,GASTechEmployee
-Elian Korel,Elian,Korel,,,Leader,10,POKCommittee
-Mandor Vann,Mandor,Vann,,,Save Our Wildlands Founder POK,8,POKCommittee
-Silvia Marek,Silvia,Marek,,,Political Strategist POK,9,POKCommittee
-Isia Vann,Isia,Vann,,,Tiskele Bend Acitivist POK,7,POKCommittee
-Lorenzo Di Stefano,Lorenzo,Di Stefano,,,Activist POK,7,POKCommittee
-Lucio Jakab,Lucio,Jakab,,,Save Our Wildlands POK,8,POKCommittee
-Henk Bodrogi,Henk,Bodrogi,,,Ex Leader POK,6,POKMember
-Carmine Osvaldo,Carmine,Osvaldo,,,Founding Member POK,5,POKMember
-Ale I. Hanne,Ale,I. Hanne,,,Founding Member POK,5,POKMember
-Jeroen Karel,Jeroen,Karel,,,Founding Member POK,5,POKMember
-Valentine Mies,Valentine,Mies,,,Founding Member POK,5,POKMember
-Yanick Calo,Yanick,Calo,,,Founding Member POK,5,POKMember
-Joreto Katell,Joreto,Katell,,,Founding Member POK,5,POKMember
-APA,,,,,Member,7,APA
-Government,,,,,Member,7,Government
+name,role,impOfPeople,organization
+Ada Campo-Corrente,Chief Information Officer for GASTech,10,GASTechBoard
+Sten Sanjorge Jr,President & CEO GASTech,10,GASTechBoard
+Ingrid Barranco,Chief Financial Officer of GASTech,9,GASTechBoard
+Orhan Strum,Chief Operating Officer for GASTech,8,GASTechBoard
+Linnea Bergen,"Group Manager – Information Technology GASTech – Abila, Kronos",7,GASTechCommittee
+Lidelse Dedos,Engineering Group Manager -GASTech - Kronos,7,GASTechCommittee
+Marin Onda,"Site Manager-GASTech –Abila,Kronos",6,GASTechCommittee
+Bertrand Ovan,"Facilities Group Manager-Abila, Kronos",6,GASTechCommittee
+Felix Resumir,"Security Group Manager - GASTech – Abila, Kronos",7,GASTechCommittee
+Axel Calzas,"Senior Drilling Technician -GASTech - Abila, Kronos",7,GASTechEmployee
+Felix Balas,"Research Engineer -GASTech-Abila, Kronos",6,GASTechEmployee
+Lars Azada,"Research Engineer GASTech – Abila, Kronos",6,GASTechEmployee
+Elsa Orilla,"Drilling Technician -GASTech -Abila, Kronos",5,GASTechEmployee
+Isak Baza,"Information Technology Technician-GASTech – Abila, Kronos",5,GASTechEmployee
+Isande Borrasca,"Senior Drill Technician- GASTech –Abila, Kronos",5,GASTechEmployee
+Nils Calixto,"Information Technology Technician-GASTech –Abila, Kronos",5,GASTechEmployee
+Sven Flecha,Information Technology Technician-GASTech – Kronos,5,GASTechEmployee
+Lucas Alcazar,"Helpdesk Consultant- GASTech – Abila, Kronos",4,GASTechEmployee
+Stenig Fusil,"Security Team Leader- GASTech -Abila, Kronos",5,GASTechEmployee
+Dante Coginian,"Cleaning Team Leader- Abila, Kronos",4,GASTechEmployee
+Emile Arpa,Janitor-GASTech - Kronos,1,GASTechEmployee
+Willem Vasco-Pais,Environmental Safety Advisor,7,GASTechEmployee
+Hideki Cocinaro,Security Officer-GASTech - Kronos,4,GASTechEmployee
+Isia Vann,Security Officer-GASTech - Kronos,4,GASTechEmployee
+Loreto Bodrogi,Security Officer-GASTech - Kronos,4,GASTechEmployee
+Minke Mies,"Security Officer- GASTech – Abila, Kronos",4,GASTechEmployee
+Anda Ribera,"Senior Executive Assistant to the CFO -GASTech – Abila, Kronos",4,GASTechEmployee
+Carla Forluniau,Administrative Assistant-GASTech – Kronos,3,GASTechEmployee
+Cornelia Lais,"Executive Assistant -GASTech – Abila,Kronos",3,GASTechEmployee
+Linda Lagos,"Executive Assistant -GASTech – Abila, Kronos",3,GASTechEmployee
+Rachel Pantanal,"Executive Assistant-GASTech –Abila, Kronos",3,GASTechEmployee
+Adan Morlun,Truck Driver GASTech - Kronos,2,GASTechEmployee
+Albina Hafon,"Truck Driver-Abila, Kronos",2,GASTechEmployee
+Claudio Hawelon,"Truck Driver, GASTech Abila, Kronos",2,GASTechEmployee
+Irene Nant,"Truck Driver, GASTech-Abila, Kronos",2,GASTechEmployee
+Varja Lagos,Member - GASTech,1,GASTechEmployee
+Brand Tempestad,Member - GASTech,1,GASTechEmployee
+Mat Bramar,Member - GASTech,1,GASTechEmployee
+Benito Hawelon,Member - GASTech,1,GASTechEmployee
+Birgitta Frente,Member - GASTech,1,GASTechEmployee
+Hennie Osvaldo,Member - GASTech,1,GASTechEmployee
+Valeria Morlun,Member - GASTech,1,GASTechEmployee
+Cecilia Morluniau,Member - GASTech,1,GASTechEmployee
+Varro Awelon,Member - GASTech,1,GASTechEmployee
+Vira Frente,Member - GASTech,1,GASTechEmployee
+Ruscella Mies Haber,Member - GASTech,1,GASTechEmployee
+Kanon Herrero,Member - GASTech,1,GASTechEmployee
+Adra Nubarron,Member - GASTech,1,GASTechEmployee
+Dylan Scozzese,Member - GASTech,1,GASTechEmployee
+Inga Ferro,Member - GASTech,1,GASTechEmployee
+Henk Mies,Member - GASTech,1,GASTechEmployee
+Gustav Cazar,Member - GASTech,1,GASTechEmployee
+Edvard Vann,Member - GASTech,1,GASTechEmployee
+Kare Orilla,Member - GASTech,1,GASTechEmployee
+Elian Korel,Leader,10,POKCommittee
+Mandor Vann,Save Our Wildlands Founder POK,8,POKCommittee
+Silvia Marek,Political Strategist POK,9,POKCommittee
+Isia Vann,Tiskele Bend Acitivist POK,7,POKCommittee
+Lorenzo Di Stefano,Activist POK,7,POKCommittee
+Lucio Jakab,Save Our Wildlands POK,8,POKCommittee
+Henk Bodrogi,Ex Leader POK,6,POKMember
+Carmine Osvaldo,Founding Member POK,5,POKMember
+Ale I. Hanne,Founding Member POK,5,POKMember
+Jeroen Karel,Founding Member POK,5,POKMember
+Valentine Mies,Founding Member POK,5,POKMember
+Yanick Calo,Founding Member POK,5,POKMember
+Joreto Katell,Founding Member POK,5,POKMember
+APA,Member,7,APA
+Government,Member,7,Government
