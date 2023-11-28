@@ -9,15 +9,42 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
-<!-- No need of style attribute here as we already have a css file -->
 
-<!-- <style>
+ <style>
     .myContainer {
         margin: auto;
         width: 1200px;
     }
 
-</style> -->
+    .main-circle {
+        fill: none;
+        stroke: black;
+        stroke-width: 2;
+    }
+
+    .node {
+        stroke: black;
+        stroke-width: 2;
+    }
+
+    .link {
+        fill: none;
+        stroke: #ccc; /* Link color */
+        stroke-width: 2;
+    }
+
+    .d3-tooltip {
+        position: absolute;
+        opacity: 0;
+        padding: 10px;
+        color: #fff;
+        background: #000;
+        border: 2px solid #000;
+        border-radius: 5px;
+    }
+
+</style> 
+
 
 <body>
     <div class="myContainer">
@@ -27,31 +54,6 @@
         <hr>
 
         <div class="border border-dark rounded p-2 mb-2 bg-light shadow-sm" id="plotDiv">
-
-            <p>
-                Kronos GasTech is a forward-thinking energy company dedicated to advancing sustainable and innovative
-                solutions in the gas technology sector. At the helm of this visionary organization is a diverse and
-                accomplished Board of Directors, providing strategic leadership and guidance. Olivia Johnson, an expert
-                in finance and investment, serves as the Chairperson, steering the company towards financial success.
-                The executive team is led by Alexander Rodriguez, a seasoned professional with a background in
-                engineering and energy management, who holds the position of Chief Executive Officer. Supporting him is
-                a dynamic group of leaders, including Benjamin Taylor as the Chief Financial Officer, Sophia Chen as the
-                Chief Operations Officer, and Michael Turner as the Chief Technology Officer. 
-            </p>
-
-            <br>
-
-            <div>
-                <label>Select Sub-Organization : </label>
-                <select id="plot_graph" onchange="plotGraph(value)">
-                    <option value="board">Board</option>
-                    <option value="technical">Technical</option>
-                    <option value="operations">Operations</option>
-                    <option value="security">Security</option>
-                    <option value="executive">Executive</option>
-                    <option value="logistics">Logistics</option>
-                </select>
-            </div>
             <br>
             <svg id="plotSvg"></svg>
         </div>
