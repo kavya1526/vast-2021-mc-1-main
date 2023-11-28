@@ -1,4 +1,4 @@
-// Processing the data type to maintain uniformity
+
 function processDataType(d) {
     for (var i = 0; i < d.length; i++) {
         d[i]['impOfPeople'] = parseFloat(d[i]['impOfPeople']);
@@ -8,7 +8,7 @@ function processDataType(d) {
     return d;
 }
 
-// Grouping the nodes (people) in terms of their respective organization
+
 function groupByOrganization(d) {
     const organizationClusters = [];
     d.forEach(element => {
@@ -20,26 +20,11 @@ function groupByOrganization(d) {
     return organizationClusters;
 }
 
-// Function to clean the 'source' attribute in linksOfficialData
-function cleanlinksOfficialData(linksOfficialData) {
-    return linksOfficialData.map(d => ({
-        source: cleanSourceAttribute(d.source),
-        target: cleanSourceAttribute(d.target),
-        frequency: d.frequency
-    }));
-}
 
-// Function to clean the 'source' attribute (remove spaces and special characters)
-function cleanSourceAttribute(source) {
-    // Replace spaces and special characters with underscores, you can modify this based on your specific requirements
-    return source.replace(/[^\w]/g, '');
-}
-
-// Loading the data
 document.addEventListener('DOMContentLoaded', function () {
     Promise.all([
         d3.csv('Resume-Data.csv'),
-        d3.csv('linksOfficial.csv'), // Load links data from the CSV file
+        d3.csv('linksOfficial.csv'), 
         d3.csv('linksUnofficial.csv')
     ]).then(function (values) {
         const resumeData = processDataType(values[0]);
@@ -55,13 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficialData) {
-    console.log(linksOfficialData);
 
     const margin = { top: 50, right: 30, bottom: 120, left: 60 },
         width = 750 - margin.left - margin.right,
         height = 850 - margin.top - margin.bottom;
 
-    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+    const colorScale = d3.scaleOrdinal(d3.schemeDark2);
 
     const svg = d3.select("#plotSvg")
         .attr("width", width + margin.left + margin.right)
@@ -73,11 +57,11 @@ function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficial
         .append("div")
         .attr("class", "d3-tooltip");
 
-    // Function to compute dynamic attributes for main circles
+
     const getcirclePositionAttributes = (organization) => {
-        const pentagonRadius = 280; // Adjust the radius as needed
-        const angleOffset = Math.PI / 2; // Offset to start the pentagon from the top
-        const angleStep = (2 * Math.PI) / 7; // Angle between vertices
+        const pentagonRadius = 280; 
+        const angleOffset = Math.PI / 2; 
+        const angleStep = (2 * Math.PI) / 7;
 
         const positions = {
             'POKMember': { angle: 0 },
@@ -92,58 +76,50 @@ function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficial
         return {
             cx: 0.5 * width + pentagonRadius * Math.cos(angleOffset + positions[organization].angle),
             cy: 0.5 * height + pentagonRadius * Math.sin(angleOffset + positions[organization].angle),
-            r: 70, // Adjust the radius as needed
+            r: 70, 
         };
     };
-
     
-    // Create a force simulation for the smaller circles
+
     const simulation = d3.forceSimulation(resumeData)
     simulation
         .force("x", d3.forceX().strength(0.05).x(d => {
             const organization = d.organization;
             const circlePosition = getcirclePositionAttributes(organization);
-            return circlePosition.cx; // Use the main circle's attributes directly
+            return circlePosition.cx; 
         }))
         .force("y", d3.forceY().strength(0.05).y(d => {
             const organization = d.organization;
             const circlePosition = getcirclePositionAttributes(organization);
-            return circlePosition.cy; // Use the main circle's attributes directly
+            return circlePosition.cy;
         }))
         .force("collide", d3.forceCollide().radius(d => (d.impOfPeople / 9) * 20 + 9));
-        // .on("tick", () => {
-        //     circles.attr("cx", d => d.x)
-        //         .attr("cy", d => d.y);
-        // });
-
-    // simulation.start();
+        
     simulation.alpha(1).alphaMin(0.0001)
     while (simulation.alpha() > simulation.alphaMin()) {
         simulation.tick();
     }
     simulation.stop()
 
-    console.log(resumeData)
 
-    const links = svg.selectAll(".link")
+    svg.selectAll(".link")
         .data(linksOfficialData.filter(d => parseFloat(d.frequency)>5))
-        .enter().append("line")  // You can use "line" instead of "path" if you want straight lines
+        .enter().append("line")  
         .attr("class", "link")
-        .attr("stroke", "green")
+        .attr("stroke", "lightgreen")
         .attr("stroke-width", 1)
         .attr("x1", d => getXCoordinate(d.source))
         .attr("y1", d => getYCoordinate(d.source))
         .attr("x2", d => getXCoordinate(d.target))
         .attr("y2", d => getYCoordinate(d.target))
         .on("mouseover", function (event, d) {
-            // Highlight the hovered link and connected circles
-            d3.select(this).style("stroke", "green"); // Highlight the link
+            
+            d3.select(this).style("stroke", "green"); 
     
             circles.filter(node => node.name === d.source || node.name === d.target)
                 .transition()
-                .style("opacity", 1); // Highlight connected circles
+                .style("opacity", 1); 
     
-            // Fade other elements
             svg.selectAll(".link")
                 .filter(link => link !== d)
                 .transition()
@@ -153,15 +129,13 @@ function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficial
                 .transition()
                 .style("opacity", 0.1);
     
-            // Show tooltip on mouseover
             tooltip.html(`Source: ${d.source} <br>Target: ${d.target}`)
                 .style("opacity", 0.9)
                 .style("left", (event.pageX + 15) + "px")
                 .style("top", (event.pageY - 15) + "px");
         })
         .on("mouseout", function () {
-            // Restore styles and opacity on mouseout
-            d3.select(this).style("stroke", null); // Restore link style
+            d3.select(this).style("stroke", null); 
     
             svg.selectAll(".link")
                 .transition()
@@ -170,13 +144,67 @@ function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficial
             circles.transition()
                 .style("opacity", 1);
     
-            // Hide tooltip on mouseout
             tooltip.html("")
                 .style("opacity", 0);
         });
 
 
-    // Create smaller circles inside the main circles
+       
+        console.log(linksUnofficialData);
+        console.log("Hi");
+
+        svg.selectAll(".link1")
+        .data(linksUnofficialData.filter(d => parseFloat(d.frequency)))
+        .enter().append("line") 
+        .attr("class", "link1")
+        .attr("stroke", "pink")
+        .attr("stroke-width", 1)
+        .attr("x1", d => getXCoordinate(d.source))
+        .attr("y1", d => getYCoordinate(d.source))
+        .attr("x2", d => getXCoordinate(d.target))
+        .attr("y2", d => getYCoordinate(d.target))
+        .on("mouseover", function (event, d) {
+            d3.select(this).style("stroke", "red"); 
+    
+            circles.filter(node => node.name === d.source || node.name === d.target)
+                .transition()
+                .style("opacity", 1); 
+    
+            svg.selectAll(".link1")
+                .filter(link => link !== d)
+                .transition()
+                .style("opacity", 0.1);
+    
+            circles.filter(node => node.name !== d.source && node.name !== d.target)
+                .transition()
+                .style("opacity", 0.1);
+    
+            
+            tooltip.html(`Source: ${d.source} <br>Target: ${d.target}`)
+                .style("opacity", 0.9)
+                .style("left", (event.pageX + 15) + "px")
+                .style("top", (event.pageY - 15) + "px");
+        })
+        .on("mouseout", function () {
+            
+            d3.select(this).style("stroke", null); 
+    
+            svg.selectAll(".link")
+                .transition()
+                .style("opacity", 1);
+    
+            circles.transition()
+                .style("opacity", 1);
+    
+            
+            tooltip.html("")
+                .style("opacity", 0);
+        });
+
+
+        
+
+
     const circles = svg.selectAll(".node")
         .data(resumeData)
         .enter().append("circle")
@@ -188,7 +216,7 @@ function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficial
         .attr("fill", d => colorScale(d.organization))
         .attr("r", d => ((d.impOfPeople + 2) / 9) * 20)
         .on("mouseover", function (event, d) {
-            // Fade all other elements
+            
             svg.selectAll(".link")
                 .transition()
                 .style("opacity", link => (link.source === d || link.target === d) ? 1 : 0.1);
@@ -196,19 +224,19 @@ function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficial
             circles.transition()
                 .style("opacity", node => (node === d) ? 1 : 0.1);
 
-            // Show tooltip on mouseover
+            
             tooltip.html(`Name: ${d.name} <br>Role: ${d.role} <br>Organization: ${d.organization}`)
                 .style("opacity", 0.9)
                 .style("left", (event.pageX + 15) + "px")
                 .style("top", (event.pageY - 15) + "px");
         })
         .on("mousemove", function (event) {
-            // Move tooltip with the mouse
+            
             tooltip.style("left", (event.pageX + 15) + "px")
                 .style("top", (event.pageY - 15) + "px");
         })
         .on("mouseout", function () {
-            // Restore opacity on mouseout
+            
             svg.selectAll(".link")
                 .transition()
                 .style("opacity", 1);
@@ -216,17 +244,9 @@ function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficial
             circles.transition()
                 .style("opacity", 1);
 
-            // Hide tooltip on mouseout
             tooltip.html("")
                 .style("opacity", 0);
         });
-
-   console.log(typeof parseFloat(linksOfficialData[0].frequency))
-    
-    x = Object(resumeData[0])
-    console.log(resumeData[0], "object")
-    console.log(Object(resumeData[0]).x, "x value")
-    console.log(resumeData[0], "object")
 
 
     function getXCoordinate(name) {
